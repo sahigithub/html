@@ -1,26 +1,325 @@
+<!DOCTYPE html>
 <html>
-<body bgcolor="orange">
-<h2><b><i>AMERICA IS GREATEST NATION</i></b></h2>
-<marquee speed="20">united states of america</marquee>
-<p>America. She is one of the most remarkable countries to ever exist. Whether you were born in the “land of the free, and home of the brave”, or live in another part of the world – you probably have often heard that the ol' U.S of A is the greatest country on Earth. That’s because what’s happened in our short history is truly impressive. We may not have the vast amount of history as our British cousins across the Atlantic, but since 1776, we’ve still done some things that are impressive to say the least. Here are just a few of the reasons that America is still on the very best countries on Earth</p>.
-<h3><b><i>OUR beginning</i></b></h3>
-<p>
-Most of us don’t share the same political and religious beliefs that the Pilgrims did when they landed at Cape Cod. But even though we don’t necessarily agree on all things, we can still be impressed with their conviction. Being willing to sail across the ocean blue in order to pursue a land where they could express their religious freedom and build their own country from the literal ground up is not a task for the faint of heart. Though they wore interesting attire, those that started our country are most certainly worthy of the highest respect.
-</p>
-<h3><b><i>OUR CONSTITUTION</i></b></h3>
-<p>It’s been called by many around the world as the greatest piece of literature to ever be written. Not so much because of all that’s in it, although that helps – but mainly because of what’s NOT in it. It is assumed that our rights are God-given, not government given – an assumption that seems cutting edge in our all too PC world. Offering a balanced view of the government’s role and the individuals responsibility to practice self-control, it is one our finest achievements, and what keeps us unique and a leader in the free world.
-</p>
-<h3><b><i>OUR LAND</i></b></h3>
-<p>This is where we get literal. Real literal. America, not her people, not her government, but the land of America is truly a sight to behold. Where else can you see the grandeur of the Grand Canyon, and the brilliance of the changing of the leaves on an Appalachian Mountainside? Rivers, deserts, tropics, and the Midwest plains come together to create enough sites for a lifetime. Even in the plains of West Texas, a land that is not known for being particularly easy on the eyes has its very own unique charm and attractive spots. In America, you are always a short drive away from seeing something that will truly take your breath away.
-</p>
-<h3><b><i>OUR PEOPLE</i></b></h3>
-<p>America is made up of her people, and when it comes to people, we’re clearly the cream of the crop. Although the news outlets would have us all believe that we’re every color hates the other, and is looking for ways to hurt one another – most of us simply haven’t ever experienced such nonsense. Most Americans are eager to help their neighbor, and are excellent ambassadors for this land of the free. We are passionate about our patriotism, and even though many of us differ in ideology, we want America to be the best version of herself possible. We’re not only looking for the easy way for us, but we want America to be the vibrant, charming beauty that we know her to be. That’s what sets us apart, and that’s what would be good to remember when we happen to differ in our ideological, spiritual, and political views.
-</P>
-<h3><b><i>OUR OPPURTUNITIES</i></b></h3>
-<p>We are the land of opportunity. That fact is why people have flocked to our shores from the very beginning. If you want to succeed here, you can. It might be hard, and require a healthy amount of blood, sweat, and sob sessions – but it’s possible. Just like in poker, sometimes others get a better hand than you, but that doesn’t mean they will beat you in the hand. There is always a way to get ahead here in America. We effectively ooze opportunity. Many of come here without so much as two nickels to rub together and have ended up making a very comfortable life for themselves. Not all of us are going to be in the 1 percent of the world’s wealth. But, we can grab the opportunity right in front of us with both hands and do some good in the world.
-</p>
-<h3><b><i>OUR FREEDOM</i></b></h3>
-<p>Some of you may love America just as much as I do, others might be more prone to object to everything that others adore about her. But that’s just what makes this land so amazing. It is a place where we can (and should) peacefully and respectfully disagree. We are free to think what we want about life in general. Everything America stands for is freedom of thought and avoidance of oppression. That is the American dream, isn’t it? To be free to do what we want, and not have a government that keeps us from expressing our beliefs as we see fit.The beauty of this land is that as long as we aren’t hurting one another, and aren’t asking for anyone else’s money – we are free to do what we want to do. The closer we keep to that ideal, the more American we are. We should not oppress one another, not with our legislation, and not even with our behavior on social media. America, although ever bold and aggressive, is also gracious. To do any less is to be “Un-American”. To judge and condemn one another based on labels and boxes that others place us in flies in the fact of what Washington, Jefferson, and Franklin had in mind when they signed the Declaration of Independence. Perhaps it’s time for all of us to remember that America, as glorious and beautiful as she is – is nothing without the ideals that made her unique and glorious in the first place.
-</p>
+<style>
+body {font-family: Arial, Helvetica, sans-serif;}
+* {box-sizing: border-box;}
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+/* Add a background color when the inputs get focus */
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Set a style for all buttons */
+button {
+  background-color: #04AA6D;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+button:hover {
+  opacity:1;
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+  padding: 14px 20px;
+  background-color: #f44336;
+}
+
+/* Float cancel and signup buttons and add an equal width */
+.cancelbtn, .signupbtn {
+  float: left;
+  width: 50%;
+}
+
+/* Add padding to container elements */
+.container {
+  padding: 16px;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: #474e5d;
+  padding-top: 50px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* Style the horizontal ruler */
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+ 
+/* The Close Button (x) */
+.close {
+  position: absolute;
+  right: 35px;
+  top: 15px;
+  font-size: 40px;
+  font-weight: bold;
+  color: #f1f1f1;
+}
+
+.close:hover,
+.close:focus {
+  color: #f44336;
+  cursor: pointer;
+}
+
+/* Clear floats */
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* Change styles for cancel button and signup button on extra small screens */
+@media screen and (max-width: 300px) {
+  .cancelbtn, .signupbtn {
+     width: 100%;
+  }
+}
+</style>
+<body>
+
+<h2>Signup Form</h2>
+
+<button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Sign Up</button>
+
+<div id="id01" class="modal">
+  <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+  <form class="modal-content" action="/action_page.php">
+    <div class="container">
+      <h1>Sign Up</h1>
+      <p>Please fill in this form to create an account.</p>
+      <hr>
+      <label for="email"><b>Email</b></label>
+      <input type="text" placeholder="Enter Email" name="email" required>
+
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required>
+
+      <label for="psw-repeat"><b>Repeat Password</b></label>
+      <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+      
+      <label>
+        <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
+      </label>
+
+      <p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
+
+      <div class="clearfix">
+        <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+        <button type="submit" class="signupbtn">Sign Up</button>
+      </div>
+    </div>
+  </form>
+</div>
+
+<script>
+// Get the modal
+var modal = document.getElementById('id01');
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+</script>
+
+</body>
+</html><!DOCTYPE html>
+<html>
+<style>
+body {font-family: Arial, Helvetica, sans-serif;}
+* {box-sizing: border-box;}
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+/* Add a background color when the inputs get focus */
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Set a style for all buttons */
+button {
+  background-color: #04AA6D;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+button:hover {
+  opacity:1;
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+  padding: 14px 20px;
+  background-color: #f44336;
+}
+
+/* Float cancel and signup buttons and add an equal width */
+.cancelbtn, .signupbtn {
+  float: left;
+  width: 50%;
+}
+
+/* Add padding to container elements */
+.container {
+  padding: 16px;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: #474e5d;
+  padding-top: 50px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* Style the horizontal ruler */
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+ 
+/* The Close Button (x) */
+.close {
+  position: absolute;
+  right: 35px;
+  top: 15px;
+  font-size: 40px;
+  font-weight: bold;
+  color: #f1f1f1;
+}
+
+.close:hover,
+.close:focus {
+  color: #f44336;
+  cursor: pointer;
+}
+
+/* Clear floats */
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* Change styles for cancel button and signup button on extra small screens */
+@media screen and (max-width: 300px) {
+  .cancelbtn, .signupbtn {
+     width: 100%;
+  }
+}
+</style>
+<body>
+
+<h2>Signup Form</h2>
+
+<button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Sign Up</button>
+
+<div id="id01" class="modal">
+  <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+  <form class="modal-content" action="/action_page.php">
+    <div class="container">
+      <h1>Sign Up</h1>
+      <p>Please fill in this form to create an account.</p>
+      <hr>
+      <label for="email"><b>Email</b></label>
+      <input type="text" placeholder="Enter Email" name="email" required>
+
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required>
+
+      <label for="psw-repeat"><b>Repeat Password</b></label>
+      <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+      
+      <label>
+        <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
+      </label>
+
+      <p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
+
+      <div class="clearfix">
+        <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+        <button type="submit" class="signupbtn">Sign Up</button>
+      </div>
+    </div>
+  </form>
+</div>
+
+<script>
+// Get the modal
+var modal = document.getElementById('id01');
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+</script>
+
 </body>
 </html>
